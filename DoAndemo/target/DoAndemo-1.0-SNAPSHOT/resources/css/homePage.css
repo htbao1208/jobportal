@@ -1,0 +1,46 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 12, 2021, 7:12:12 PM
+    Author     : kid03
+*/
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+.title-homepage {
+    font-size: 300%;
+    text-transform: uppercase;
+    text-shadow: 5px 5px 15px #000;
+    font-family: 'VT323', monospace;
+    color: white;
+    font-weight: bold;
+}
+
+
+.h4-hp {
+    font-size: 200%;
+    font-family: 'VT323', monospace;
+    color: grey;
+}
+
+.card-body {
+    background-color: white;
+}
+
+.form-control-borderless {
+    border: none;
+}
+
+.form-control-borderless:hover, .form-control-borderless:active, .form-control-borderless:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.welcome hr {
+	border-top: 2px solid rgba(0,0,0,0.6);
+	width: 95%;	
+	margin-bottom: 2rem;
+}

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache
+    Software Foundation//DTD Tiles Configuration 3.0//EN"
+    "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+    
+<tiles-definitions>
+    <!--HOME-->
+    <definition name="baseLayout" template="/WEB-INF/layout/base.jsp">
+        <put-attribute name="title" value="...."/>
+        <put-attribute name="css" value=""/>
+        <put-attribute name="header" value="/WEB-INF/layout/header.jsp" />
+        <put-attribute name="subheader" value="" />
+        <put-attribute name="content" value=""/>
+        <put-attribute name="script" value=""/>
+        <put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
+    </definition>
+    <definition name="index" extends="baseLayout">
+        <put-attribute name="title" value="Trang chu" />
+        <put-attribute name="css" value="/DoAndemo/css/homePage.css"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/index.jsp" />       
+    </definition>
+    <definition name="login" extends="baseLayout">
+        <put-attribute name="title" value="DANG NHAP" />
+        <put-attribute name="css" value="/DoAndemo/css/login-style.css"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/login.jsp" />       
+    </definition>
+    <definition name="register" extends="baseLayout">
+        <put-attribute name="title" value="DANG KY" />
+        <put-attribute name="css" value="/DoAndemo/css/register-style.css"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/register.jsp" />       
+    </definition>
+<!--    step 1
+    <definition name="companystep2" extends="baseLayout">
+        <put-attribute name="title" value="COMPANY" />
+        <put-attribute name="css" value="#"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/companystep1.jsp" />       
+    </definition>
+    step 2
+    <definition name="companystep1" extends="baseLayout">
+        <put-attribute name="title" value="COMPANY" />
+        <put-attribute name="css" value="#"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/companystep2.jsp" />       
+    </definition>-->
+    
+    <!--COMPANY-->
+    <definition name="homeComp" extends="baseLayout">
+        <put-attribute name="title" value="Company" />
+        <put-attribute name="css" value="#"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/company/company.jsp" />       
+    </definition>
+    
+    <definition name="postComp" extends="baseLayout">
+        <put-attribute name="title" value="Post" />
+        <put-attribute name="css" value="#"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/company/companypost.jsp" />       
+    </definition>
+    
+    <definition name="searchJob" extends="baseLayout">
+        <put-attribute name="title" value="Post" />
+        <put-attribute name="css" value="/DoAndemo/css/search.css"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/search.jsp" />       
+    </definition>
+    
+    <definition name="postdetail" extends="baseLayout">
+        <put-attribute name="title" value="Thông tin bài viết" />
+        <put-attribute name="css" value="/DoAndemo/css/postdetail.css"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/company/postdetail.jsp" />       
+    </definition>
+    
+    <!--admin-->
+    
+    <definition name="admin" extends="baseLayout">
+        
+        <put-attribute name="title" value="abc" />
+        <put-attribute name="css" value=""/>
+        <put-attribute name="subheader" value="/WEB-INF/layout/admin-subheader.jsp"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/admin/admin.jsp"/>
+             
+    </definition>
+    
+    <definition name="userreport" extends="baseLayout">
+        
+        <put-attribute name="title" value="abc" />
+        <put-attribute name="css" value="/DoAndemo/css/userlist.css"/>
+        <put-attribute name="subheader" value="/WEB-INF/layout/admin-subheader.jsp"/>
+        <put-attribute name="content" value="/WEB-INF/jsp/admin/userreport.jsp"/>
+             
+    </definition>
+    
+    <!--SEEKER-->
+    <definition name="seeker-profile" extends="baseLayout">
+        
+        <put-attribute name="title" value="abc" />
+        <put-attribute name="css" value="/DoAndemo/css/profile-seeker.css"/>
+        
+        <put-attribute name="content" value="/WEB-INF/jsp/seeker/profile.jsp"/>
+             
+    </definition>
+    
+    <definition name="seeker-level" extends="baseLayout">
+        
+        <put-attribute name="title" value="TEST" />
+        <put-attribute name="css" value=""/>
+
+        <put-attribute name="content" value="/WEB-INF/jsp/seeker/level.jsp"/>
+        <put-attribute name="script" value="/DoAndemo/js/seeker.js"/>
+             
+    </definition>
+    
+    
+    
+
+
+</tiles-definitions> 
+
+
